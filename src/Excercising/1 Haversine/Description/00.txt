@@ -1,0 +1,2 @@
+<h2><span class="mw-headline" id="The_haversine_formula">The haversine formula</span></h2>
+<p>For any two points on a sphere, the haversine of the <a href="https://en.wikipedia.org/wiki/Central_angle" title="Central angle">central angle</a> between them is given by</p>

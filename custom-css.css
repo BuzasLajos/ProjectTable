@@ -1,0 +1,284 @@
+
+body {
+	background-color: #3092c0; //3092c0 12962b  a3cdfc;
+	}
+
+
+th {
+    text-align:center; 
+    vertical-align: middle !important;
+    border-bottom: 2px solid black !important;
+	}
+	
+td{
+	//word-wrap: break-word;
+	//min-width: 160px;
+	//max-width: 160px;
+    vertical-align:middle !important;
+	text-align: center;
+    border: 0px solid black !important; 
+	}
+tr{
+   border: 2px solid black !important;
+}
+
+
+.table-responsive {
+  //  width: 100%  !important;
+    margin-bottom: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/*
+Táblázat törzse legyen fix magasság, lehessen görgetni, a fejlécnél ne legyen scrollbar
+https://bootsnipp.com/snippets/oVlgM
+!!Nyomtatásban 100% height legyen mindkettőnél
+*/
+
+.projekt-table tbody{
+	height: 230px !important;
+	overflow-y: auto !important;
+	width: 100% !important;
+}
+
+.projekt-table thead, .projekt-table tbody, .projekt-table tr, .projekt-table td, .projekt-table th {
+  display: block !important;
+}
+
+.projekt-table tbody td, .projekt-table thead > tr> th {
+  float: left !important;
+  border-bottom-width: 0 !important;
+}
+
+.jumbotron p, jumbotron h1, jumbotron h2, jumbotron h3, jumbotron h4, jumbotron h5{
+/*TODO: Edge-ben más font*/
+	color: black !important;
+	font-family: "Times New Roman bold", Times, serif;
+/*	font-family: "Arial Black", Gadget, sans-serif; */
+}
+
+.jumbotron{
+	background-color: #d1faff !important;
+}
+
+//TODO: jumbotron-custom tag-et megszüntetni
+
+	 
+.mytable tr, .mytable td { 
+height: 100% !important; 
+//max-width: 50% !important; 
+vertical-align: bottom !important;
+border: 0px solid black !important;
+	text-align: center !important
+}
+
+/* Felső táblázat a logókkal és a címmel (csak a teljes nézet) */
+.mytable{
+	width: 100%;
+	margin-bottom: 4%;
+   border: 0px solid black !important;
+}
+
+
+/*
+.project-table{
+  //  table-layout: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+}
+*/
+
+
+.modal-body{
+	background-color: #ffffff; //d9fffa;
+}
+
+.modal-header{
+	background-color: #3092c0; 
+}
+
+
+.modal-header p, .modal-header h1, .modal-header h2, .modal-header h3, .modal-header h4{
+color: white !important;
+text-align: center;
+}
+
+.modal-title h4{color: white !important;}
+
+.modal-dialog{
+	width: auto;
+ min-width: 300px;
+ max-width: 1200px;
+}
+
+.container{
+	max-width: 900px !important;
+}
+
+.container-fluid {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  max-width: 85% !important; /* or 950px */
+}
+
+
+#projektcim, .project-table td{
+	
+	/*
+	extra small resolution esetln a table-responsive nem tördelné a sorokat, csak nagyobb felbontásnál
+	*/
+white-space: normal !important;
+overflow: auto;
+word-wrap: break-word !important;
+}
+
+
+.navbar-toggle {
+  border-color: black !important;
+  background-color: white;
+}
+
+.navbar-toggle:hover { 
+    background-color: #3092c0 !important;
+	color:white;
+}
+
+.navbar-toggle.pull-left {
+  float: left;
+ // margin-left: 10px;
+  border-color: black !important;
+  background-color: #d1faff;
+  color: black;
+}
+
+  .navbar-toggle.pull-left:hover { 
+    background-color: #3092c0 !important;
+	color:white;
+}
+
+
+.navbar-toggle.pull-right {
+  float: right;
+ // margin-left: 10px;
+  border-color: black !important;
+  background-color: #d1faff;
+  color: black;
+}
+
+.navbar{
+	background-color: #14569c; //7ec6e8
+}
+
+.active{
+	color: white !important;
+	background-color: #3092c0 !important;
+}
+
+@media print
+{
+
+	only-print{display: block !important;}
+	
+	@page {                
+    size: A4;
+	size: auto;
+	margin: 5mm !important;
+    padding: 0 !important;  
+			}
+
+          html, body, .jumbotron, .jumbotron div, .teljes, .container-fluid,
+		  .container-fluid div, table, .table-responsive, .table-responsive div,
+		  .container, div, p, a, table, tr{
+			margin: 0 !important;
+			padding: 0 !important;  	
+            font-size: 8pt !important;
+			
+          }
+		  .container, .container-fluid, .teljes, .container-fluid div{
+			  width: 100% !important;
+			  width: 100vw !important; //100% viewport
+			  }
+		  
+          .template { overflow: hidden; }
+          img { width: 100%; }
+		  
+		 
+    .small-print, .small-print div, .small-print .img-responsive { 
+	display: block !important;
+max-height: 100px !important;
+width: auto !important;
+	}
+	
+ .modal {
+	 background-color: white !important;
+	 width: 100% !important;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            min-height: 550px;
+            overflow: visible !important;
+          }
+          .modal-dialog {
+            visibility: visible !important;
+            overflow: visible !important;
+          }
+          li {
+            page-break-after: auto;
+          }
+
+	.non-printable { display: none !important; }
+	
+		} //media print
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

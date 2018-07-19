@@ -1,0 +1,22 @@
+When list pictures, check if that src exists in img_compress_20 folder
+If exists show the compressed image
+else show the original pictures
+
+Image compressing is manual now, do it server-side automatically (if the image is large)
+
+Admin UI
+	Login, create folder, upload files
+	add projects and create tables (edit the table.txt in the src folder)
+
+Recognize file types and show icons (pdf, zip, rar, etc.)
+
+Vertical/Horisontal images can't show properly
+
+Info button clicked, but src dowsn't exist --> echo "Feltöltés alatt"
+
+Problem: If the project table is built from a txt file,
+	Google robots can find the content of the webpage?
+	
+table("src/palyazatok.txt", "Pályázatok");
+	Page can't load if palyazatok.txt dowsn't exist
+	

@@ -1,0 +1,10 @@
+The project table built with static html code
+each row's INFO button open it's own separate modal
+when the modal opened, call the listFiles(); function
+from the functions.php that list the content of the path given in the first parameter
+The second parameter determines if the bootstrap list-group items will be opened (parameter="in" --> items class is "collapse in")
+If JavaScript is disabled, you can't open the list-group items, so there is a button in <noscript> tag
+that call the listFiles() function in a new tab (inside info.php with two parameters)
+Example for the info.php with parameters:
+http://localhost/projekt_eredeti_template/info.php?projekt=projecteuler&js=in
+

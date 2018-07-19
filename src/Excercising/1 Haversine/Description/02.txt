@@ -1,0 +1,1 @@
+<p>where</p><ul><li><span class="texhtml">hav</span> is the <a href="https://en.wikipedia.org/wiki/Haversine" class="mw-redirect" title="Haversine">haversine</a> function:</li></ul>
