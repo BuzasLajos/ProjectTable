@@ -180,6 +180,47 @@ word-wrap: break-word !important;
 	background-color: #3092c0 !important;
 }
 
+
+.rotateleft{
+	transform: rotate(270deg);
+	
+	/*
+	After the rotation the width will be the height of the image
+	top --> left
+	left --> bottom
+	bottom --> right
+	right --> top
+	
+	*/
+	
+	margin-top: 10%;
+	margin-bottom: 10%;
+	padding-top: 10%;
+	padding-bottom: 10%; 
+	width: 100%;
+	height: auto;
+}
+
+.rotateright{
+	transform: rotate(90deg);
+	
+	/*
+	After the rotation the width will be the height of the image
+	top --> left
+	left --> bottom
+	bottom --> right
+	right --> top
+	
+	*/
+	
+	margin-top: 10%;
+	margin-bottom: 10%;
+	padding-top: 10%;
+	padding-bottom: 10%; 
+	width: 100%;
+	height: auto;
+}
+
 @media print
 {
 

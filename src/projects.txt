@@ -1,0 +1,5 @@
+ID	Description	Info
+1	Project Euler problems	#INFO_ProjectEuler	#_TAG_danger	#_TITLE_Project Euler problems
+2	CodinGame Puzzles (Easy)	#INFO_CodinGame	#_TAG_primary	#_TITLE_CodinGame puzzles
+3	Excercising	#INFO_Excercising	#_TAG_success	#_TITLE_Excercising
+4	Érettségi feladatok	#INFO_erettsegi	#_TITLE_Érettségi feladatok	#_TAG_success
